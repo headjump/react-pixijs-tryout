@@ -14,7 +14,6 @@ module.exports = React.createClass({
     this.setState({
       game_active: !this.state.game_active
     });
-    console.log(this.state);
   },
   render: function(){
     var game_content = null;
