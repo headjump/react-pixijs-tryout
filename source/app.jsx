@@ -13,7 +13,7 @@ module.exports = React.createClass({
   },
   toggleGameActive: function() {
     this.setState({
-      current: this.state.active === "menu" ? "game" : "menu"
+      current: this.state.current === "menu" ? "game" : "menu"
     });
   },
   startGame: function() {
