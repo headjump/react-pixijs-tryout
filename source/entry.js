@@ -3,9 +3,10 @@ require("stylesheets/style.sass");
 
 var
   React = require("react"),
-  App = require("app");
+  App = require("app"),
+  Game = require("game");
 
 React.render(
-  React.createElement(App),
+  React.createElement(Game),
   document.getElementById("app")
 );
