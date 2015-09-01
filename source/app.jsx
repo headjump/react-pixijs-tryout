@@ -2,27 +2,33 @@
 
 var
   React = require("react"),
-  Game = require("game");
+  Game = require("game"),
+  MenuMain = require("menu_main");
 
 module.exports = React.createClass({
   getInitialState: function(){
     return {
-      game_active: false
+      current: "menu"
     };
   },
   toggleGameActive: function() {
     this.setState({
-      game_active: !this.state.game_active
+      current: this.state.active === "menu" ? "game" : "menu"
     });
   },
+  startGame: function() {
+    this.setState({current: "game"});
+  },
   render: function(){
-    var game_content = null;
-    if(this.state.game_active) game_content = <Game/>;
+    var content = null;
+
+    if(this.state.current === "game") content = <Game/>;
+    if(this.state.current === "menu") content = <MenuMain startGame={this.startGame}/>;
+
     return (
       <div>      
-        <h1 className={"sample"}>The game!</h1>
         <a onClick={this.toggleGameActive}>Toggle Game</a>
-        {game_content}
+        {content}
       </div>
     );
   }
