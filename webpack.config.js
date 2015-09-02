@@ -23,6 +23,9 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      jquery: "webpack-zepto"
+    },
     modulesDirectories: [
       "node_modules", "source", "test"
     ],

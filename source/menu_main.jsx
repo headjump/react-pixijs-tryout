@@ -1,7 +1,8 @@
 "use strict";
 
 var
-  React = require("react");
+  React = require("react"),
+  Link = require("react-router").Link;
 
 module.exports = React.createClass({
   render: function(){
@@ -9,10 +10,7 @@ module.exports = React.createClass({
       <div className={"menu"}>      
         <h1 className={"sample"}>The game!</h1>
         <p>
-          <a className={"btn"} onClick={this.props.startGame}>Start Game!</a>
-        </p>
-        <p>
-          <a className={"btn"}>Credits</a>
+          <Link className={"btn"} to="game">Start Game!</Link>
         </p>
       </div>
     );

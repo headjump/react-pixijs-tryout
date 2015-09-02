@@ -3,7 +3,7 @@
 var
   React = require("react"),
   PIXI = require("pixi.js"),
-  $ = require("webpack-zepto");
+  $ = require("jquery");
 
 var 
   pixi_renderer_instance = PIXI.autoDetectRenderer(400, 300),

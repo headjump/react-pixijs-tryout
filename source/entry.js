@@ -1,11 +1,10 @@
 require("index.html");
 require("stylesheets/style.sass");
 
-var
-  React = require("react"),
-  App = require("app");
+var 
+  router = require("router"),
+  $ = require("jquery");
 
-React.render(
-  React.createElement(App),
-  document.getElementById("app")
-);
+$(function() {
+  router.bootTo(document.getElementById("app"));
+});
