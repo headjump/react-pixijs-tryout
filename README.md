@@ -1,19 +1,8 @@
-Tic Tac Toe
-===========
+The Game!
+=========
 
-Browser based Tic Tac Toe
+Browser based react/pixie mixup using webpack
 
-
-Gameplay
---------
-
-2 players play Tic Tac Toe taking turns on the same browser window (no network-multiplayer, no AI).
-
-
-Target design
--------------
-
-TODO
 
 Environment
 -----------
@@ -44,3 +33,4 @@ Technologies used
 * [React](https://facebook.github.io/react/) for web components
 * [Sass](http://sass-lang.com/) for CSS preprocessing
 * [Mocha](http://mochajs.org/) as test runner and [Chai](http://chaijs.com/) as assertion library
+* [Pixijs](http://pixijs.com/) for canvas rendering
